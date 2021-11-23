@@ -12,6 +12,88 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <section id="sign-up-in">
+        <form id="sign-up" class="border">
+          <fieldset id=>
+            <legend>Sign Up</legend>
+            <input
+              type="email"
+              name="credentials[email]"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="password"
+              name="credentials[password]"
+              placeholder="Password"
+              required
+            />
+            <input
+              type="password"
+              name="credentials[password_confirmation]"
+              placeholder="Password Confirmation"
+              required
+            />
+            <button class="btn btn-danger">Sign Up</button>
+          </fieldset>
+        </form>
+  
+        <form id="sign-in" class="border">
+          <legend>Sign In</legend>
+          <fieldset>
+            <input
+              type="email"
+              name="credentials[email]"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="password"
+              name="credentials[password]"
+              placeholder="Password"
+              required
+            />
+  
+            <button class="btn btn-danger">Sign In</button>
+          </fieldset>
+        </form>
+      </section>
+      <section id="after-sign-in">
+
+        <button id="new-game" class="btn btn-danger">New game</button>
+        <button id="play-again" class="btn btn-danger">Play Again</button>
+  
+        <form id="change-password" class="border">
+          <fieldset>
+            <legend>Change Password</legend>
+            <input
+              type="password"
+              name="passwords[old]"
+              placeholder="Old Password"
+              required
+            />
+            <input
+              type="password"
+              name="passwords[new]"
+              placeholder="New Password"
+              required
+            />
+  
+            <button class="btn btn-danger">Change Password</button>
+          </fieldset>
+        </form>
+  
+        <form id="sign-out" class="border">
+  
+          <fieldset>
+            <button class="btn btn-danger">Sign Out</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section>
+        <div id="fail-message"></div>
+        <div id="display-message"></div>
+      </section>
     </body>
 </html>
