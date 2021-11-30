@@ -21,10 +21,11 @@ const signUpFailure = function (error) {
 const signInSuccess = function (responseData) {
   store.user = responseData.user
   $('fail-message').hide()
-  $('#display-message').text('Sign up successful!')
+  $('#display-message').text('Sign in successful!')
   $('#display-message').removeClass()
   $('#display-message').addClass('text-success')
   $('#fail-message').addClass('text-danger')
+  $('#after-sign-in').show()
   console.log('responseData is', responseData)
 }
 
