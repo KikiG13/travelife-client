@@ -1,5 +1,6 @@
 // require the config file, so we have access to our API's url
 const config = require('../config')
+const store = require('../store')
 
 // this function will make a POST request to create a single book
 const create = function (formData) {
@@ -11,7 +12,10 @@ const create = function (formData) {
     url: `${config.apiUrl}/destinations`,
     // when making our $.ajax request, include the formData
     // so it has new details
-    data: formData
+    data: formData,
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    }
   })
 }
 

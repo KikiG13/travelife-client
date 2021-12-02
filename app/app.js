@@ -6,12 +6,13 @@
 
 const store = require('./store')
 const authEvents = require('./auth/events')
+const destinationEvents = require('./destinations/events')
 
 $(() => {
   $('#sign-up').on('submit', authEvents.onSignUp)
   $('#sign-in').on('submit', authEvents.onSignIn)
   $('#change-password').on('submit', authEvents.onChangePassword)
   $('#sign-out').on('submit', authEvents.onSignOut)
-  $('#post').on('submit', book)
+  $('#post').on('submit', destinationEvents.onCreateDestination)
 })
 

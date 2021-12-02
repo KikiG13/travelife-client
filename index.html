@@ -84,52 +84,53 @@
           <fieldset>
             <legend>Destination
               <input
-                type="country"
-                name="country"
+                type="text"
+                name="destination[country]"
                 placeholder="Country"
                 required
               />
             </legend>
             <input
-              type="city"
-              name="city"
+              type="text"
+              name="destination[city]"
               placeholder="City"
             />
             <input
-              type="comment"
-              name="comment"
+              type="text"
+              name="destination[comment]"
               placeholder="Comment"
             />
             <input
-              type="favorite dish"
-              name="favorite dish"
+              type="text"
+              name="destination[favoriteDish]"
               placeholder="Favorite Dish"
             />
             <input
-              type="site1"
-              name="site1"
+              type="text"
+              name="destination[site1]"
               placeholder="First Site"
             />
             <input
-              type="site2"
-              name="site2"
+              type="text"
+              name="destination[site2]"
               placeholder="Second Site"
             />
             <input
-              type="site3"
-              name="site3"
+              type="text"
+              name="destination[site3]"
               placeholder="Third Site"
             />
             <input
-              type="photo"
-              name="photo"
+              type="text"
+              name="destination[photo]"
               placeholder="Share a photo!"
             />
             <input
-              type="rating"
-              name="rating"
+              type="text"
+              name="destination[rating]"
               placeholder="How do you rate this city out of 10?"
             />
+            <button class="btn btn-danger">Post</button>
           </fieldset>
         </form>
   
@@ -139,6 +140,11 @@
             <button class="btn btn-danger">Sign Out</button>
           </fieldset>
         </form>
+      </section>
+
+      <section>
+        <div id="show-destinations"></div>
+        <div id="dest-error-message"></div>
       </section>
 
       <section>
