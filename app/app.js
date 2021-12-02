@@ -14,5 +14,6 @@ $(() => {
   $('#change-password').on('submit', authEvents.onChangePassword)
   $('#sign-out').on('submit', authEvents.onSignOut)
   $('#post').on('submit', destinationEvents.onCreateDestination)
+  
 })
 
