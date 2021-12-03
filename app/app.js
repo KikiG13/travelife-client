@@ -14,6 +14,7 @@ $(() => {
   $('#change-password').on('submit', authEvents.onChangePassword)
   $('#sign-out').on('submit', authEvents.onSignOut)
   $('#post').on('submit', destinationEvents.onCreateDestination)
-  
+  $('#destinations-index').on('click', destinationEvents.onIndexDestinations)
+  $('#destinations-destroy').on('submit', destinationEvents.onDestroyDestination)
 })
 
