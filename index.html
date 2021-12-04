@@ -11,55 +11,78 @@
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
+
     <body>
+
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
+      <section class="title">
+        <div class="main">
+          <h1>Travelife</h1>
+        </div>
+        <div class="sub">
+          <h5>Where do you go?</h5>
+        </div>
+      </section>
+
+      </div>
       <section id="sign-up-in">
-        <form id="sign-up" class="border">
-          <fieldset id=>
-            <legend>Sign Up</legend>
-            <input
+          <form id="sign-up" class="border">
+            <fieldset id=>
+              <legend>Sign Up</legend>
+              <input
               type="email"
               name="credentials[email]"
               placeholder="Email"
               required
-            />
-            <input
+              />
+              <input
               type="password"
               name="credentials[password]"
               placeholder="Password"
               required
-            />
-            <input
+              />
+              <input
               type="password"
               name="credentials[password_confirmation]"
               placeholder="Password Confirmation"
               required
-            />
-            <button class="btn btn-danger">Sign Up</button>
-          </fieldset>
-        </form>
-  
-        <form id="sign-in" class="border">
-          <legend>Sign In</legend>
-          <fieldset>
-            <input
+              />
+              <button class="btn btn-danger">Sign Up</button>
+            </fieldset>
+          </form>
+        
+          <form id="sign-in" class="border">
+            <legend>Sign In</legend>
+            <fieldset>
+              <input
               type="email"
               name="credentials[email]"
               placeholder="Email"
               required
-            />
-            <input
+              />
+              <input
               type="password"
               name="credentials[password]"
               placeholder="Password"
               required
-            />
-  
-            <button class="btn btn-danger">Sign In</button>
-          </fieldset>
-        </form>
-      </section>
+              />
+              
+              <button class="btn btn-danger">Sign In</button>
+            </fieldset>
+          </form>
+        </section>
       <section id="after-sign-in">
   
+        <div class="row">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
+          </div>
         <form id="change-password" class="border">
           <fieldset>
             <legend>Change Password</legend>
@@ -142,10 +165,69 @@
             type="text"
             name="destination[id]"
             placeholder="Destination ID"
-          />
-          <button class="btn btn-danger">Delete Destination</button>
-
+            />
+            <button class="btn btn-danger">Delete Destination</button>
         </form>
+
+        <form id="destinations-update">
+            <fieldset>
+              <legend>Update a destination
+                <input
+                  type="text"
+                  name="destination[id]"
+                  placeholder="Destination ID"
+                />
+              </legend>
+                <input
+                  type="text"
+                  name="destination[country]"
+                  placeholder="Country"
+                  required
+                />
+              <input
+                type="text"
+                name="destination[city]"
+                placeholder="City"
+              />
+              <input
+                type="text"
+                name="destination[comment]"
+                placeholder="Comment"
+              />
+              <input
+                type="text"
+                name="destination[favoriteDish]"
+                placeholder="Favorite Dish"
+              />
+              <input
+                type="text"
+                name="destination[site1]"
+                placeholder="First Site"
+              />
+              <input
+                type="text"
+                name="destination[site2]"
+                placeholder="Second Site"
+              />
+              <input
+                type="text"
+                name="destination[site3]"
+                placeholder="Third Site"
+              />
+              <input
+                type="text"
+                name="destination[photo]"
+                placeholder="Share a photo!"
+              />
+              <input
+                type="text"
+                name="destination[rating]"
+                placeholder="How do you rate this city out of 10?"
+              />
+              <button class="btn btn-danger">Update</button>
+            </fieldset>
+        </form>
+
         <form id="sign-out" class="border">
           <fieldset>
             <button class="btn btn-danger">Sign Out</button>

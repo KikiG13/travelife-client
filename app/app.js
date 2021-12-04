@@ -9,6 +9,7 @@ const authEvents = require('./auth/events')
 const destinationEvents = require('./destinations/events')
 
 $(() => {
+  $('#after-sign-in').hide()
   $('#sign-up').on('submit', authEvents.onSignUp)
   $('#sign-in').on('submit', authEvents.onSignIn)
   $('#change-password').on('submit', authEvents.onChangePassword)
@@ -16,5 +17,6 @@ $(() => {
   $('#post').on('submit', destinationEvents.onCreateDestination)
   $('#destinations-index').on('click', destinationEvents.onIndexDestinations)
   $('#destinations-destroy').on('submit', destinationEvents.onDestroyDestination)
+  $('#destinations-update').on('submit', destinationEvents.onUpdateDestination)
 })
 

@@ -52,6 +52,20 @@ const destroy = function (id) {
   })
 }
 
+const update = function (id, formData) {
+  console.log('formData is', formData)
+  return $.ajax({
+    // use the patch http method
+    method: 'PATCH',
+    // this is the same url as SHOW and DESTROY
+    url: config.apiUrl + '/destinations/' + id,
+    // Get the formData for the new resource inputs
+    data: formData,
+    headers: {
+      Authorization: 'Bearer' + store.user.token
+    }
+  })
+}
 
 
 
@@ -59,5 +73,6 @@ const destroy = function (id) {
 module.exports = {
   create,
   index,
-  destroy
+  destroy,
+  update
 }

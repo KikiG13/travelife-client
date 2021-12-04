@@ -26,6 +26,7 @@ const signInSuccess = function (responseData) {
   $('#display-message').addClass('text-success')
   $('#fail-message').addClass('text-danger')
   $('#after-sign-in').show()
+  $('#sign-up-in').hide()
   console.log('responseData is', responseData)
 }
 

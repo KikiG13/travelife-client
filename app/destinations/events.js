@@ -66,10 +66,36 @@ const onDestroyDestination = (event) => {
     .catch(ui.onError)
 }
 
+const onUpdateDestination = (event) => {
+  // prevent the default action of the form refreshing the page
+  // when it is submitted.
+  event.preventDefault()
+
+  // event.target is whatever submitted the event, we are
+  // storing it in the user friendly variable `form`
+  const form = event.target
+  // Get the data out of our `form`
+  const formData = getFormFields(form)
+  console.log(formData)
+
+  // extract the id from our form's data
+  const id = formData.destination.id
+
+  // make an HTTP request, to update a single destination based on its id
+  // pass `formData` to update the destination with a new title & author
+  api
+    .update(id, formData)
+  // if getting a single destination was successful, update it on the page
+    .then(ui.onUpdateDestinationSuccess)
+  // otherwise, show an error message
+    .catch(ui.onError)
+}
+
 
 
 module.exports = {
   onCreateDestination,
   onIndexDestinations,
-  onDestroyDestination
+  onDestroyDestination,
+  onUpdateDestination
 }
