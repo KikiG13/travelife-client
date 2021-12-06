@@ -62,7 +62,7 @@ const update = function (id, formData) {
     // Get the formData for the new resource inputs
     data: formData,
     headers: {
-      Authorization: 'Bearer' + store.user.token
+      Authorization: 'Bearer ' + store.user.token
     }
   })
 }
