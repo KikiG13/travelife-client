@@ -7,6 +7,11 @@ const signUpSuccess = function (responseData) {
   $('#display-message').addClass('text-success')
   $('form').trigger('reset')
   console.log('responseData is', responseData)
+
+  setTimeout(() => {
+    $('#display-message').html('')
+    $('#display-message').removeClass('text-success')
+  }, 5000)
 }
 
 const signUpFailure = function (error) {
@@ -15,6 +20,11 @@ const signUpFailure = function (error) {
   $('#fail-message').removeClass()
   $('#fail-message').addClass('text-danger')
   console.error('error is', error)
+
+  setTimeout(() => {
+    $('#fail-message').html('')
+    $('#fail-message').removeClass('text-success')
+  }, 5000)
 }
 
 
@@ -27,7 +37,13 @@ const signInSuccess = function (responseData) {
   $('#fail-message').addClass('text-danger')
   $('#after-sign-in').show()
   $('#sign-up-in').hide()
+  $('form').trigger('reset')
   console.log('responseData is', responseData)
+
+  setTimeout(() => {
+    $('#display-message').html('')
+    $('#display-message').removeClass('text-success')
+  }, 5000)
 }
 
 const signInFailure = function (error) {
@@ -36,6 +52,11 @@ const signInFailure = function (error) {
   $('#fail-message').removeClass()
   $('#fail-message').addClass('text-danger')
   console.error('error is', error)
+
+  setTimeout(() => {
+    $('#fail-message').html('')
+    $('#fail-message').removeClass('text-success')
+  }, 5000)
 }
 
 const changePasswordSuccess = function (responseData) {
@@ -44,6 +65,11 @@ const changePasswordSuccess = function (responseData) {
   $('#display-message').addClass('text-success')
   $('form').trigger('reset')
   console.log('responseData is', responseData)
+
+  setTimeout(() => {
+    $('#display-message').html('')
+    $('#display-message').removeClass('text-success')
+  }, 5000)
 }
 
 const changePasswordFailure = function (error) {
@@ -51,6 +77,11 @@ const changePasswordFailure = function (error) {
   $('#fail-message').removeClass()
   $('#fail-message').addClass('text-danger')
   console.error('error is', error)
+
+  setTimeout(() => {
+    $('#fail-message').html('')
+    $('#fail-message').removeClass('text-success')
+  }, 5000)
 }
 
 const signOutSuccess = function (responseData) {
@@ -59,7 +90,13 @@ const signOutSuccess = function (responseData) {
   $('#display-message').addClass('text-success')
   $('#sign-up-in').show()
   $('#after-sign-in').hide()
+  $('#show-destinations').html('')
   console.log('responseData is', responseData)
+
+  setTimeout(() => {
+    $('#display-message').html('')
+    $('#display-message').removeClass('text-success')
+  }, 5000)
 }
 
 const signOutFailure = function (error) {
@@ -67,6 +104,11 @@ const signOutFailure = function (error) {
   $('#fail-message').removeClass()
   $('#fail-message').addClass('text-danger')
   console.error('error is', error)
+
+  setTimeout(() => {
+    $('#fail-message').html('')
+    $('#fail-message').removeClass('text-success')
+  }, 5000)
 }
 
 module.exports = {

@@ -32,8 +32,8 @@ const onCreateDestinationSuccess = function (responseData) {
   // set its html to be our destination's html
   $('#show-destinations').html(destinationHtml)
 
-  $('form').trigger('reset')
 
+  $('form').trigger('reset')
 }
 
 
@@ -52,7 +52,7 @@ const onIndexDestinationsSuccess = function (responseData) {
     // add html for each destination, to the destinationsHtml variable
     destinationsHtml += `
     <div>
-      <h6>You successfully added a destination!</h6>
+      <h6>${destination.country} is off your bucket list!</h6>
       <h4>Country: ${destination.country}</h4>
       <p>City: ${destination.city}</p>
       <p>Comment: ${destination.comment}</p>
@@ -60,7 +60,13 @@ const onIndexDestinationsSuccess = function (responseData) {
       <p>Site1: ${destination.site1}</p>
       <p>Site2: ${destination.site2}</p>
       <p>Site3: ${destination.site3}</p>
-      <p>Photo: ${destination.photo}</p>
+      `
+      if (destination.photo) {
+        destinationsHtml += `
+        <p>Photo: <img src=${destination.photo} height="200" width="300" alt:"Your destination photo"></a></p>
+        `
+      }
+      destinationsHtml += `
       <p>Rating: ${destination.rating}</p>
       <p>ID: ${destination._id}</p>
 
