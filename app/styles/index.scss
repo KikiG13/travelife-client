@@ -15,59 +15,69 @@
   display: flex;
   justify-content: center
 }
-.space {
-  display: flex;
-  justify-content: center;
-  border: 3px solid black;
-}
-#sign-up {
-  display: flex;
-  flex-wrap: wrap;
-  // justify-content: space-around;
+
+// #sign-up {
+//   display: flex;
+//   flex-wrap: wrap;
+//   // justify-content: space-around;
+//   // margin-top: 20vh;
+//   border: none;
+//   // width: 
+// }
+// #sign-in {
+//   display: flex;
+//   flex-wrap: wrap;
+//   // justify-content: space-around;
+//   border: 3px solid pink;
+// }
+// #form-style {
+//   // display: flex;
+//   // justify-content: center;
+//   // flex-direction: column;
+//   // border: 3px solid pink;
+//   // // width: 50vw;
+//   // align-items: center;
+
+// }
+// .form-style1 {
+//   // display: flex;
+//   // justify-content: center;
+//   // flex-direction: column;
+//   // // width: 50vw;
+//   // align-items: center;
+// }
+// input {
+//   border: black;
+// }
+// .signup {
   // margin-top: 20vh;
-  border: none;
-  // width: 
-}
-#sign-in {
+// }
+.image-sign {
   display: flex;
-  flex-wrap: wrap;
-  // justify-content: space-around;
-  border: 3px solid pink;
-}
-#form-style {
-  display: flex;
-  justify-content: center;
   flex-direction: column;
-  border: 3px solid black;
-  // width: 50vw;
-}
-.form-style1 {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  // width: 50vw;
   align-items: center;
-}
-input {
-  border: black;
-}
-.signup {
-  margin-top: 20vh;
-}
-.images {
-  display: flex;
-  // background: url('../../public/dahua.jpg');
-  border: 3px solid black
+  // border: 3px solid black;
 }
 .pic1a {
   background-size: 100%;
-  width: 10vw;
-  height: 10vh;
+  width: 28vw;
+  height: 28vh;
   // border: 3px solid black
   // background: url('public/dahua.jpg')
 }
 .pic1b {
   background-size: 100%;
-  width: 20vw;
-  height: 20vh;
+  width: 28vw;
+  height: 28vh;
+  margin-top: 5vh;
+}
+// .pic1c {
+//   background-size: 100%;
+//   width: 20vw;
+//   height: 20vh;
+// }
+.bottom-images {
+  display: flex;
+  justify-content: space-around;
+  // border: 3px solid red;
 }
