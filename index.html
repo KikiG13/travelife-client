@@ -138,25 +138,6 @@
   </div>
 
 </div>
-        <!-- <form id="change-password" class="border">
-          <fieldset>
-            <legend>Change Password</legend>
-            <input
-              type="password"
-              name="passwords[old]"
-              placeholder="Old Password"
-              required
-            />
-            <input
-              type="password"
-              name="passwords[new]"
-              placeholder="New Password"
-              required
-            />
-  
-            <button class="btn btn-danger">Change Password</button>
-          </fieldset>
-        </form> -->
 
         <!-- Trigger/Open The Modal -->
 <button id="on-post">Add Destination</button>
@@ -223,130 +204,104 @@
   </div>
 
 </div>
-        <form id="post">
-          <fieldset>
-            <legend>Destination
-              <input
-                type="text"
-                name="destination[country]"
-                placeholder="Country"
-                required
-              />
-            </legend>
-            <input
-              type="text"
-              name="destination[city]"
-              placeholder="City"
-            />
-            <input
-              type="text"
-              name="destination[comment]"
-              placeholder="Comment"
-            />
-            <input
-              type="text"
-              name="destination[favoriteDish]"
-              placeholder="Favorite Dish"
-            />
-            <input
-              type="text"
-              name="destination[site1]"
-              placeholder="First Site"
-            />
-            <input
-              type="text"
-              name="destination[site2]"
-              placeholder="Second Site"
-            />
-            <input
-              type="text"
-              name="destination[site3]"
-              placeholder="Third Site"
-            />
-            <input
-              type="text"
-              name="destination[photo]"
-              placeholder="Share a photo!"
-            />
-            <input
-              type="text"
-              name="destination[rating]"
-              placeholder="How do you rate this city out of 10?"
-            />
-            <button class="btn btn-danger">Post</button>
-          </fieldset>
-        </form>
-
+        
         <h4>Show All Destinations</h4>
         <button class="btn btn-danger" id="destinations-index">Show All Destinations</button>
   
-        <form id="destinations-destroy">
+
+
+
+        <!-- Trigger/Open The Modal -->
+<button id="on-delete">Delete Post</button>
+
+<!-- The Modal -->
+<div id="delete-modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form id="destinations-destroy">
+      <input
+        type="text"
+        name="destination[id]"
+        placeholder="Destination ID"
+        />
+        <button class="btn btn-danger">Delete Destination</button>
+    </form>
+  </div>
+
+</div>
+
+        <!-- Trigger/Open The Modal -->
+<button id="on-update">Update a Destination</button>
+
+<!-- The Modal -->
+<div id="update-modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form id="destinations-update">
+      <fieldset>
+        <legend>Update a Destination
           <input
             type="text"
             name="destination[id]"
             placeholder="Destination ID"
-            />
-            <button class="btn btn-danger">Delete Destination</button>
-        </form>
+          />
+        </legend>
+          <input
+            type="text"
+            name="destination[country]"
+            placeholder="Country"
+            required
+          />
+        <input
+          type="text"
+          name="destination[city]"
+          placeholder="City"
+        />
+        <input
+          type="text"
+          name="destination[comment]"
+          placeholder="Comment"
+        />
+        <input
+          type="text"
+          name="destination[favoriteDish]"
+          placeholder="Favorite Dish"
+        />
+        <input
+          type="text"
+          name="destination[site1]"
+          placeholder="First Site"
+        />
+        <input
+          type="text"
+          name="destination[site2]"
+          placeholder="Second Site"
+        />
+        <input
+          type="text"
+          name="destination[site3]"
+          placeholder="Third Site"
+        />
+        <input
+          type="text"
+          name="destination[photo]"
+          placeholder="Share a photo!"
+        />
+        <input
+          type="text"
+          name="destination[rating]"
+          placeholder="How do you rate this city out of 10?"
+        />
+        <button class="btn btn-danger">Update</button>
+      </fieldset>
+  </form>
+  </div>
 
-        <form id="destinations-update">
-            <fieldset>
-              <legend>Update a destination
-                <input
-                  type="text"
-                  name="destination[id]"
-                  placeholder="Destination ID"
-                />
-              </legend>
-                <input
-                  type="text"
-                  name="destination[country]"
-                  placeholder="Country"
-                  required
-                />
-              <input
-                type="text"
-                name="destination[city]"
-                placeholder="City"
-              />
-              <input
-                type="text"
-                name="destination[comment]"
-                placeholder="Comment"
-              />
-              <input
-                type="text"
-                name="destination[favoriteDish]"
-                placeholder="Favorite Dish"
-              />
-              <input
-                type="text"
-                name="destination[site1]"
-                placeholder="First Site"
-              />
-              <input
-                type="text"
-                name="destination[site2]"
-                placeholder="Second Site"
-              />
-              <input
-                type="text"
-                name="destination[site3]"
-                placeholder="Third Site"
-              />
-              <input
-                type="text"
-                name="destination[photo]"
-                placeholder="Share a photo!"
-              />
-              <input
-                type="text"
-                name="destination[rating]"
-                placeholder="How do you rate this city out of 10?"
-              />
-              <button class="btn btn-danger">Update</button>
-            </fieldset>
-        </form>
+</div>
 
         <form id="sign-out" class="border">
           <fieldset>

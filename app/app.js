@@ -21,8 +21,10 @@ $(() => {
   $('#destinations-destroy').on('submit', destinationEvents.onDestroyDestination)
   $('#destinations-update').on('submit', destinationEvents.onUpdateDestination)
   $('#on-change-password').on('click', () => $('#password-modal').show())
-  $('.close').on('click', () => $('.modal').hide())
   $('#on-post').on('click', () => $('#post-modal').show())
+  $('#on-update').on('click', () => $('#update-modal').show())
+  $('#on-delete').on('click', () => $('#delete-modal').show())
+  $('.close').on('click', () => $('.modal').hide())
 })
 
 

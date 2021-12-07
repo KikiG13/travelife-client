@@ -76,6 +76,7 @@ const onIndexDestinationsSuccess = function (responseData) {
     // select the div with id destinations-display ($('#destinations-display'))
   // and update its html, to be the html of all the destinations we want to show
   $('#show-destinations').html(destinationsHtml)
+
 }
 
 // give the title parameter the default of 'Destination'
@@ -98,6 +99,7 @@ const onDestroyDestinationSuccess = function (title = 'Destination') {
     // remove the green color causes by `text-success`
     $('#show-destinations').removeClass('text-success')
   }, 5000)
+  $('.modal').hide()
 
   $('form').trigger('reset')
 }
@@ -114,6 +116,7 @@ const onUpdateDestinationSuccess = function () {
     $('#show-destinations').removeClass('text-success')
   }, 5000)
 
+  $('#update-modal').hide()
   $('form').trigger('reset')
 }
 
