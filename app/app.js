@@ -7,21 +7,7 @@
 const store = require('./store')
 const authEvents = require('./auth/events')
 const destinationEvents = require('./destinations/events')
-// const modal = document.getElementById("password-Modal")
-// const btn = document.getElementById("myBtn")
-// const span = document.getElementsByClassName("close")[0]
 
-// btn.onclick = function() {
-//   modal.style.display = "block";
-// }
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
 
 
 $(() => {
@@ -36,6 +22,7 @@ $(() => {
   $('#destinations-update').on('submit', destinationEvents.onUpdateDestination)
   $('#on-change-password').on('click', () => $('#password-modal').show())
   $('.close').on('click', () => $('.modal').hide())
+  $('#on-post').on('click', () => $('#post-modal').show())
 })
 
 

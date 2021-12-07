@@ -31,8 +31,7 @@ const onCreateDestinationSuccess = function (responseData) {
   // for the div with the id destinations-display,
   // set its html to be our destination's html
   $('#show-destinations').html(destinationHtml)
-
-
+  $('#post-modal').hide()
   $('form').trigger('reset')
 }
 
