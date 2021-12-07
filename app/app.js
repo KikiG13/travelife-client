@@ -15,7 +15,7 @@ $(() => {
   $('#sign-up').on('submit', authEvents.onSignUp)
   $('#sign-in').on('submit', authEvents.onSignIn)
   $('#change-password').on('submit', authEvents.onChangePassword)
-  $('#sign-out').on('submit', authEvents.onSignOut)
+  $('#sign-out').on('click', authEvents.onSignOut)
   $('#post').on('submit', destinationEvents.onCreateDestination)
   $('#destinations-index').on('click', destinationEvents.onIndexDestinations)
   $('#destinations-destroy').on('submit', destinationEvents.onDestroyDestination)
@@ -24,6 +24,7 @@ $(() => {
   $('#on-post').on('click', () => $('#post-modal').show())
   $('#on-update').on('click', () => $('#update-modal').show())
   $('#on-delete').on('click', () => $('#delete-modal').show())
+  // $('#signout').on('click', () => $('#my-sign-out').show())
   $('.close').on('click', () => $('.modal').hide())
 })
 

@@ -1,56 +1,33 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
 
 .background {
   background-color: #20B2AA;
-  font-family: 'Smooch', cursive
 }
 .main {
+  font-family: 'Smooch', cursive;
   display: flex;
   // flex-direction: column;
   justify-content: center;
   // position: fixed
 }
 .sub {
+  font-family: 'Smooch', cursive;
   display: flex;
   justify-content: center
 }
-
-// #sign-up {
-//   display: flex;
-//   flex-wrap: wrap;
-//   // justify-content: space-around;
-//   // margin-top: 20vh;
-//   border: none;
-//   // width: 
-// }
-// #sign-in {
-//   display: flex;
-//   flex-wrap: wrap;
-//   // justify-content: space-around;
-//   border: 3px solid pink;
-// }
-// #form-style {
-//   // display: flex;
-//   // justify-content: center;
-//   // flex-direction: column;
-//   // border: 3px solid pink;
-//   // // width: 50vw;
-//   // align-items: center;
-
-// }
-// .form-style1 {
-//   // display: flex;
-//   // justify-content: center;
-//   // flex-direction: column;
-//   // // width: 50vw;
-//   // align-items: center;
-// }
-// input {
-//   border: black;
-// }
-// .signup {
-  // margin-top: 20vh;
+.signup {
+  font-family: 'Smooch', cursive;
+}
+.signin {
+  font-family: 'Smooch', cursive;
+}
+#show-data {
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+// .show-destinations {
+//   overflow: auto;
 // }
 .image-sign {
   display: flex;
@@ -88,4 +65,16 @@
 }
 .modal {
   width: 25vw;
+}
+.modal-bar {
+  // border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.data {
+  // border: 3px solid black;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
 }
