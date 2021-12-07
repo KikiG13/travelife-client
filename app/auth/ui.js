@@ -65,6 +65,7 @@ const changePasswordSuccess = function (responseData) {
   $('#display-message').addClass('text-success')
   $('form').trigger('reset')
   console.log('responseData is', responseData)
+  $('#password-modal').hide()
 
   setTimeout(() => {
     $('#display-message').html('')

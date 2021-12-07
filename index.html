@@ -14,12 +14,12 @@
 
     <body class="background">
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-md-4">
         </div>
         <div class="col-md-4">
         </div>
-      </div>
+      </div> -->
       <section class="title">
         <div class="main">
           <h1>Travelife</h1>
@@ -84,12 +84,12 @@
         </div>
       </div>
 
-      <div class="messages">
+      <!-- <div class="messages">
         <section>
           <div id="fail-message"></div>
           <div id="display-message"></div>
         </section>
-      </div>
+      </div> -->
         
   <div class="bottom-images">
     <div class="pic1">
@@ -108,7 +108,37 @@
           <div class="col-md-4">
           </div>
         </div>
-        <form id="change-password" class="border">
+
+    <button id="on-change-password">Change Password</button>
+<!-- The Modal -->
+<div id="password-modal" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form id="change-password" class="border">
+      <fieldset>
+        <legend>Change Password</legend>
+        <input
+          type="password"
+          name="passwords[old]"
+          placeholder="Old Password"
+          required
+        />
+        <input
+          type="password"
+          name="passwords[new]"
+          placeholder="New Password"
+          required
+        />
+        <button class="btn btn-danger">Change Password</button>
+      </fieldset>
+    </form>
+  </div>
+
+</div>
+        <!-- <form id="change-password" class="border">
           <fieldset>
             <legend>Change Password</legend>
             <input
@@ -126,8 +156,73 @@
   
             <button class="btn btn-danger">Change Password</button>
           </fieldset>
-        </form>
+        </form> -->
 
+        <!-- Trigger/Open The Modal -->
+<button id="myBtn">Add Destination</button>
+
+<!-- The Modal -->
+<div id="post-Modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form id="post">
+      <fieldset>
+        <legend>Destination
+          <input
+            type="text"
+            name="destination[country]"
+            placeholder="Country"
+            required
+          />
+        </legend>
+        <input
+          type="text"
+          name="destination[city]"
+          placeholder="City"
+        />
+        <input
+          type="text"
+          name="destination[comment]"
+          placeholder="Comment"
+        />
+        <input
+          type="text"
+          name="destination[favoriteDish]"
+          placeholder="Favorite Dish"
+        />
+        <input
+          type="text"
+          name="destination[site1]"
+          placeholder="First Site"
+        />
+        <input
+          type="text"
+          name="destination[site2]"
+          placeholder="Second Site"
+        />
+        <input
+          type="text"
+          name="destination[site3]"
+          placeholder="Third Site"
+        />
+        <input
+          type="text"
+          name="destination[photo]"
+          placeholder="Share a photo!"
+        />
+        <input
+          type="text"
+          name="destination[rating]"
+          placeholder="How do you rate this city out of 10?"
+        />
+        <button class="btn btn-danger">Post</button>
+      </fieldset>
+    </form>
+  </div>
+
+</div>
         <form id="post">
           <fieldset>
             <legend>Destination
