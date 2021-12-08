@@ -6,7 +6,6 @@ const signUpSuccess = function (responseData) {
   $('#display-message').removeClass()
   $('#display-message').addClass('text-success')
   $('form').trigger('reset')
-  console.log('responseData is', responseData)
 
   setTimeout(() => {
     $('#display-message').html('')
@@ -38,7 +37,6 @@ const signInSuccess = function (responseData) {
   $('#after-sign-in').show()
   $('#sign-up-in').hide()
   $('form').trigger('reset')
-  console.log('responseData is', responseData)
 
   setTimeout(() => {
     $('#display-message').html('')
@@ -64,7 +62,6 @@ const changePasswordSuccess = function (responseData) {
   $('#display-message').removeClass()
   $('#display-message').addClass('text-success')
   $('form').trigger('reset')
-  console.log('responseData is', responseData)
   $('#password-modal').hide()
 
   setTimeout(() => {
@@ -92,7 +89,6 @@ const signOutSuccess = function (responseData) {
   $('#sign-up-in').show()
   $('#after-sign-in').hide()
   $('#show-destinations').html('')
-  console.log('responseData is', responseData)
 
   setTimeout(() => {
     $('#display-message').html('')

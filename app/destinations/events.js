@@ -18,7 +18,6 @@ const onCreateDestination = (event) => {
   const form = event.target
   // Get the data out of our `form`
   const formData = getFormFields(form)
-  console.log(formData)
 
   // make an HTTP request, to create a single destination
   // pass `formData` to update the destination with a new title & author
@@ -53,7 +52,6 @@ const onDestroyDestination = (event) => {
   const form = event.target
   // Get the data out of our `form`
   const formData = getFormFields(form)
-  console.log(formData)
 
   // extract the id from our form's data
   const id = formData.destination.id
@@ -76,7 +74,6 @@ const onUpdateDestination = (event) => {
   const form = event.target
   // Get the data out of our `form`
   const formData = getFormFields(form)
-  console.log(formData)
 
   // extract the id from our form's data
   const id = formData.destination.id
@@ -91,11 +88,9 @@ const onUpdateDestination = (event) => {
     .catch(ui.onError)
 }
 
-
-
 module.exports = {
   onCreateDestination,
   onIndexDestinations,
   onDestroyDestination,
   onUpdateDestination
-}
+} 

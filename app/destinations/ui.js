@@ -9,7 +9,6 @@
 const onCreateDestinationSuccess = function (responseData) {
   // extract the destination object from our response's data
   const destination = responseData.destination
-  console.log(responseData)
 
   // create the html to display a single destination
   const destinationHtml = `
@@ -40,7 +39,6 @@ const onCreateDestinationSuccess = function (responseData) {
 const onIndexDestinationsSuccess = function (responseData) {
   // extract the destinations from our response data into a variable to make it easier to use
   const destinations = responseData.destinations
-  console.log(responseData)
 
   // create a string that will store all of our destinations as html
   // so we can use the `.html` method, to display the destinations on the page later
@@ -141,11 +139,10 @@ const onError = function (err) {
   $('form').trigger('reset')
 }
 
-
 module.exports = {
   onCreateDestinationSuccess,
   onIndexDestinationsSuccess,
   onDestroyDestinationSuccess,
   onUpdateDestinationSuccess,
   onError
-}
+} 

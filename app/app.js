@@ -24,8 +24,5 @@ $(() => {
   $('#on-post').on('click', () => $('#post-modal').show())
   $('#on-update').on('click', () => $('#update-modal').show())
   $('#on-delete').on('click', () => $('#delete-modal').show())
-  // $('#signout').on('click', () => $('#my-sign-out').show())
   $('.close').on('click', () => $('.modal').hide())
 })
-
-
