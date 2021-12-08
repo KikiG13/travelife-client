@@ -20,8 +20,10 @@ As a student at General Assembly I was assigned a full-stack application project
 
 ## Wireframes
 
-![Imgur](https://i.imgur.com/UQHs2NI.jpg)
+[Imgur](https://i.imgur.com/UQHs2NI.jpg)
 
-![Imgur](https://i.imgur.com/CdP8sEj.jpg)
+[Imgur](https://i.imgur.com/CdP8sEj.jpg)
+
+## Link to Application
 
 (https://kikig13.github.io/travelife-client)
