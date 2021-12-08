@@ -1,5 +1,4 @@
 
-
 // just tell the user you created the destination
 // const onCreateDestinationSuccess = function () {
 //   $('#destinations-display').text('Destination was created successfully')
@@ -49,8 +48,8 @@ const onIndexDestinationsSuccess = function (responseData) {
     // add html for each destination, to the destinationsHtml variable
     destinationsHtml += `
     <div>
-      <h6>${destination.country} is off your bucket list!</h6>
       <h4>Country: ${destination.country}</h4>
+      <h6>${destination.country} is off your bucket list!</h6>
       <p>City: ${destination.city}</p>
       <p>Comment: ${destination.comment}</p>
       <p>Favorite Dish: ${destination.favoriteDish}</p>
@@ -66,6 +65,7 @@ const onIndexDestinationsSuccess = function (responseData) {
       destinationsHtml += `
       <p>Rating: ${destination.rating}</p>
       <p>ID: ${destination._id}</p>
+      <h1>-------------------------------------------------</h1>
 
     </div>
   `
