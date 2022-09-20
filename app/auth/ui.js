@@ -37,6 +37,7 @@ const signInSuccess = function (responseData) {
   $('#after-sign-in').show()
   $('#sign-up-in').hide()
   $('form').trigger('reset')
+  $('#show-data').hide()
 
   setTimeout(() => {
     $('#display-message').html('')

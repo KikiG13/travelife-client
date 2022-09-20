@@ -74,7 +74,7 @@ const onIndexDestinationsSuccess = function (responseData) {
     // select the div with id destinations-display ($('#destinations-display'))
   // and update its html, to be the html of all the destinations we want to show
   $('#show-destinations').html(destinationsHtml)
-
+  $('#show-data').show()
 }
 
 // give the title parameter the default of 'Destination'
