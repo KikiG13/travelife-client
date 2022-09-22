@@ -106,3 +106,10 @@ input {
   margin-top: 10px;
   position: relative;
 }
+hr {
+  border-style: solid none none none;
+  height: 0px;
+  // width: 5px;
+  border-color: black;
+  border-width: 5px;
+}

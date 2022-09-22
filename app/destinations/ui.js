@@ -65,8 +65,7 @@ const onIndexDestinationsSuccess = function (responseData) {
       destinationsHtml += `
       <p>Rating: ${destination.rating}</p>
       <p>ID: ${destination._id}</p>
-      <h1>-------------------------------------------------</h1>
-
+      <hr>
     </div>
   `
    })
