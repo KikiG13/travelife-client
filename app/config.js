@@ -1,6 +1,7 @@
 let apiUrl
 const apiUrls = {
-  production: 'https://pure-caverns-98178.herokuapp.com',
+  // production: 'https://pure-caverns-98178.herokuapp.com',
+  production: 'https://trevelife-heroku.herokuapp.com',
   development: 'http://localhost:4741'
 }
 
